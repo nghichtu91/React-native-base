@@ -1,0 +1,17 @@
+{
+    "AppScreen": {
+        "HomeTabTitle": "Home",
+        "SevicesTabTitle": "Sevices",
+        "ArticlesTabTitle": "Articles",
+        "MessagesTabTitle": "Messages"
+    },
+    "GetStartedScreen": {
+        "SkipText": "Skip",
+        "HeaderTitleOne": "Get Instant Consult From Your Preferred Doctor",
+        "HeaderTitleSecond": "Find Trustworthy Health Information",
+        "HeaderSubTitleOne": "Now you can speak to your preferred doctor within 1 minute through chat/voice call/ video call",
+        "HeaderSubTitleSecond": "You will get the most accurate information about any diseases from top-class doctors",
+        "GetStartedBtnText": "Get Started",
+        "GetStartedSecondBtnText": "Get Started"
+    }
+}

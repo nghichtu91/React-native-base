@@ -1,0 +1,17 @@
+{
+    "AppScreen": {
+        "HomeTabTitle": "Trang chủ",
+        "SevicesTabTitle": "Dịch vụ",
+        "ArticlesTabTitle": "Blog",
+        "MessagesTabTitle": "Tin nhắn"
+    },
+    "GetStartedScreen": {
+        "SkipText": "Bỏ qua",
+        "HeaderTitleOne": "Bạn nhận được tư vấn từ các bác sĩ",
+        "HeaderTitleSecond": "Tìm kiếm thông tin sức khoẻ tin cậy",
+        "HeaderSubTitleOne": "Bây giờ, bạn có thể trò chuyện với bác sĩ của mình trong 1 phút thông qua chat/gọi/gọi video",
+        "HeaderSubTitleSecond": "Bạn sẽ nhận được thông tin chính xác nhất từ các bác sĩ hàng đâu",
+        "GetStartedBtnText": "Bắt Đầu",
+        "GetStartedSecondBtnText": "Get Started"
+    }
+}

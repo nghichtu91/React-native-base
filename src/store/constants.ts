@@ -1,0 +1,2 @@
+export const GET_STARTED_COMPLETE = 'GET_STARTED_COMPLETE';
+export const THEME_NAME = 'THEME_NAME';
