@@ -2,6 +2,8 @@
 #import <AppCenterReactNative.h>
 #import <AppCenterReactNativeAnalytics.h>
 #import <AppCenterReactNativeCrashes.h>
+#import "RNBootSplash.h" // <- add the header import
+
 #if RCT_DEV
 #import <React/RCTDevLoadingView.h>
 #endif
@@ -60,6 +62,7 @@ static void InitializeFlipper(UIApplication *application) {
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [RNBootSplash initWithStoryboard:@"BootSplash" rootView:rootView];
   return YES;
 }
 

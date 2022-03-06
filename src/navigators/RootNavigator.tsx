@@ -30,13 +30,13 @@ export const RootNavigator = () => {
         isOnboarding ? RootScreen.GETSTRATED : RootScreen.AUTHEN
       }
       screenOptions={DEFAULT_SCREEN_OPTIONS}>
-      <RootStack.Screen name={RootScreen.APP} component={AppScreen} />
-      <RootStack.Screen name={RootScreen.AUTHEN} component={AuthNavigator} />
+      {/* <RootStack.Screen name={RootScreen.APP} component={AppScreen} /> */}
+      {/* <RootStack.Screen name={RootScreen.AUTHEN} component={AuthNavigator} /> */}
       <RootStack.Screen name={RootScreen.GETSTRATED} component={GetStrated} />
-      <RootStack.Screen
+      {/* <RootStack.Screen
         name={RootScreen.GETSTRATED_SECONDARY}
         component={GetStrated}
-      />
+      /> */}
     </RootStack.Navigator>
   );
 };

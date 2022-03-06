@@ -8,8 +8,8 @@ import Logo from '@Assets/logo.svg';
 import { useNavigation } from '@react-navigation/native';
 import { RootScreen, AuthScreen } from '@Navigators/constant';
 import { AuthenScreenNavigationProp } from './types';
-
 import { Button, Text } from '@Components/index';
+import { TextInput } from 'react-native-paper';
 
 const Header = styled.View`
   flex: 4;
@@ -131,6 +131,16 @@ const CreateAccount = styled(Text)`
   color: #2b67f6;
 `;
 
+const CCC = styled(TextInput)`
+  background: #fff;
+`;
+
+// CCC.defaultProps = {
+//   theme: {
+//     roundness: 80,
+//   },
+// };
+
 export const Authen = () => {
   const navigation = useNavigation<AuthenScreenNavigationProp>();
   const loginWithFB = () => navigation.navigate(RootScreen.APP);
@@ -173,6 +183,7 @@ export const Authen = () => {
                   <CreateAccount>Create an Account</CreateAccount>
                 </Pressable>
               </SubmitInner>
+              <CCC label="shjshjd" placeholder="Hello" mode="outlined" />
             </Form>
           </Content>
           <Footer />

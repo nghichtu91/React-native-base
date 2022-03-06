@@ -13,6 +13,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		5B19D36F26AECAF000D0FFCD /* AppCenter-Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D36E26AECAF000D0FFCD /* AppCenter-Config.plist */; };
+		5B19D37126AEE9FD00D0FFCD /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B19D37026AEE9FD00D0FFCD /* BootSplash.storyboard */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		EB721256D103FEE4F2D60366 /* libPods-TrekkingApp-TrekkingAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AB5F1F01CA1D607AABB05F5 /* libPods-TrekkingApp-TrekkingAppTests.a */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,7 @@
 		3F5C8383F05708DB82AAB08F /* Pods-TrekkingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrekkingApp.debug.xcconfig"; path = "Target Support Files/Pods-TrekkingApp/Pods-TrekkingApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4AB5F1F01CA1D607AABB05F5 /* libPods-TrekkingApp-TrekkingAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrekkingApp-TrekkingAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B19D36E26AECAF000D0FFCD /* AppCenter-Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AppCenter-Config.plist"; path = "../AppCenter-Config.plist"; sourceTree = "<group>"; };
+		5B19D37026AEE9FD00D0FFCD /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = TrekkingApp/BootSplash.storyboard; sourceTree = "<group>"; };
 		6DD9D383F4D3E9198834B991 /* Pods-TrekkingApp-TrekkingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrekkingApp-TrekkingAppTests.release.xcconfig"; path = "Target Support Files/Pods-TrekkingApp-TrekkingAppTests/Pods-TrekkingApp-TrekkingAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TrekkingApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB748E064B347823FFDC1285 /* libPods-TrekkingApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrekkingApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +120,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				5B19D37026AEE9FD00D0FFCD /* BootSplash.storyboard */,
 				5B19D36E26AECAF000D0FFCD /* AppCenter-Config.plist */,
 				13B07FAE1A68108700A75B9A /* TrekkingApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -203,7 +206,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -248,6 +251,7 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				5B19D36F26AECAF000D0FFCD /* AppCenter-Config.plist in Resources */,
+				5B19D37126AEE9FD00D0FFCD /* BootSplash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

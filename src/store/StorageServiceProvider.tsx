@@ -43,9 +43,23 @@ export const useStorage = () => {
     [storageService.setOnboarded],
   );
 
+  const [isThemeDark, setIsThemeDarking] = useState(
+    storageService.isThemeDark.get(),
+  );
+
+  const setIsThemeDark = useMemo(
+    () => storageService.setOnThemeDark,
+    [storageService.setOnThemeDark],
+  );
+
   useEffect(
     () => storageService.isOnboarding.observe(setIsOnboarding),
     [storageService.isOnboarding],
+  );
+
+  useEffect(
+    () => storageService.isThemeDark.observe(setIsThemeDarking),
+    [storageService.isThemeDark],
   );
 
   const reset = useCallback(async () => {
@@ -61,7 +75,9 @@ export const useStorage = () => {
       isOnboarding,
       setOnboarded,
       reset,
+      isThemeDark,
+      setIsThemeDark,
     }),
-    [isOnboarding, reset, setOnboarded],
+    [isOnboarding, isThemeDark, reset, setIsThemeDark, setOnboarded],
   );
 };

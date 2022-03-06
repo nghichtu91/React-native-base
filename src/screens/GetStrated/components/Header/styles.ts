@@ -10,23 +10,19 @@ export const Header = styled.View`
 `;
 
 export const HeaderTipOne = styled.Text`
-  font-weight: bold;
-  font-size: ${(props) => props.theme.sizes?.H3};
+  /* font-weight: bold;
   text-align: center;
   line-height: ${normalize(34) + 'px'};
   display: flex;
   align-items: flex-end;
-  color: ${(props) => props.theme.colors.BLACK};
-  margin-bottom: ${normalize(20) + 'px'};
+  margin-bottom: ${normalize(20) + 'px'}; */
 `;
 
 export const HeaderTipSecond = styled.Text`
-  font-size: ${(props) => props.theme.sizes?.BASE};
-  color: ${(props) => props.theme.colors.BLACK};
-  text-align: center;
+  /* text-align: center;
   line-height: ${normalize(17) + 'px'};
   align-items: center;
   text-align: center;
   display: flex;
-  opacity: 0.65;
+  opacity: 0.65; */
 `;

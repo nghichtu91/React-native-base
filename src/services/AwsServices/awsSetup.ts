@@ -3,7 +3,7 @@ import Amplify from 'aws-amplify';
 import awsconfig from '../../aws-exports';
 import { urlOpener } from './urlOpener';
 
-export const awsSetup = () => {
+const awsSetup = () => {
   Amplify.configure({
     ...awsconfig,
     Analytics: {
@@ -15,3 +15,5 @@ export const awsSetup = () => {
     },
   });
 };
+
+awsSetup();

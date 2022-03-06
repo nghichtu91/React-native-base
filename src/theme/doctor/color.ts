@@ -65,4 +65,14 @@ const COLORS = {
   ...SOCIAL,
 };
 
+export const colors = {
+  primary: '#EF873D',
+  accent: '#2B67F6',
+  background: '#393938',
+  surface: '#F9F6F4',
+  text: '#29282C',
+  disabled: '#C4C4C4',
+  placeholder: '#393938',
+};
+
 export default COLORS;

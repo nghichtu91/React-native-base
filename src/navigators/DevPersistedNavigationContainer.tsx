@@ -7,8 +7,9 @@ import {
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as React from 'react';
 import { InteractionManager } from 'react-native';
+import RNBootSplash from 'react-native-bootsplash';
 
-interface DevPersistedNavigationContainerProps
+export interface DevPersistedNavigationContainerProps
   extends React.ComponentProps<typeof NavigationContainer> {
   persistKey: string;
 }
@@ -58,9 +59,8 @@ function DevPersistedNavigationContainerImpl(
     const loadPersistedState = async () => {
       try {
         const jsonString = await AsyncStorage.getItem(persistKey);
-        console.log(jsonString);
         if (jsonString != null) {
-          // setInitialState(JSON.parse(jsonString));
+          setInitialState(JSON.parse(jsonString));
         }
         setIsReady(true);
       } catch (ex) {
@@ -82,6 +82,7 @@ function DevPersistedNavigationContainerImpl(
       ref={forwardedRef}
       initialState={initialState}
       onStateChange={onStateChangeInternal}
+      onReady={() => RNBootSplash.hide()}
     />
   );
 }

@@ -8,27 +8,24 @@
  * @format
  */
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 //#endregion
 //#region  navigator
 import { RootNavigator } from '@Navigators/index';
-import DevPersistedNavigationContainer from '@Navigators/DevPersistedNavigationContainer';
 //#endregion
 
 import { StorageServiceProvider } from '@Store/StorageServiceProvider';
 //#region  theme
-import { ThemeProvider } from '@Theme/styled-components';
-import { myTheme } from '@Theme/theme';
+import { ThemeProvider } from '@Theme/ThemeProvider';
+
 //#endregion
 //#region  utils
 import { captureException } from '@Utils/log';
 //#endregion
-import './src/i18n';
-import { awsSetup } from '@Services/AwsServices/awsSetup';
-import { AwsProvider } from '@Services/AwsServices/AwsProvider';
 
-awsSetup();
+import './src/i18n';
+import '@Services/AwsServices/awsSetup';
 
 const appInit = async () => {
   try {
@@ -37,29 +34,16 @@ const appInit = async () => {
   }
 };
 
-const App = () => {
-  useEffect(() => {
-    appInit();
-  }, []);
-  return (
-    <DevPersistedNavigationContainer persistKey="navigationState">
-      <RootNavigator />
-    </DevPersistedNavigationContainer>
-  );
-};
-
 const AppProvider = () => {
-  useEffect(() => {
+  React.useEffect(() => {
     appInit();
   }, []);
 
   return (
     <SafeAreaProvider>
       <StorageServiceProvider>
-        <ThemeProvider theme={myTheme}>
-          <AwsProvider>
-            <App />
-          </AwsProvider>
+        <ThemeProvider>
+          <RootNavigator />
         </ThemeProvider>
       </StorageServiceProvider>
     </SafeAreaProvider>
